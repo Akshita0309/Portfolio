@@ -25,11 +25,11 @@ export const profile = {
 
   resumeUrl: "/resume.pdf",
 
-  email: "YOUR_EMAIL@example.com",
+  email: "akshitan0309@gmail.com",
 
   social: {
-    linkedin: "https://linkedin.com/in/YOUR_LINKEDIN_USERNAME",
-    github: "https://github.com/YOUR_GITHUB_USERNAME",
+    linkedin: "https://www.linkedin.com/in/akshita-nagdali-24601924b/",
+    github: "https://github.com/Akshita0309",
     trailhead: "https://trailblazer.me/id/YOUR_TRAILHEAD_USERNAME",
   },
 
@@ -41,11 +41,7 @@ export const profile = {
   ],
 
   skills: {
-    languages: [
-      { name: "Java" },
-      { name: "JavaScript" },
-      { name: "SQL" },
-    ],
+    languages: [{ name: "Java" }, { name: "JavaScript" }, { name: "SQL" }],
     frontend: [
       { name: "React" },
       { name: "HTML5" },
@@ -58,10 +54,7 @@ export const profile = {
       { name: "Spring Security" },
       { name: "JWT" },
     ],
-    databases: [
-      { name: "MySQL" },
-      { name: "PostgreSQL" },
-    ],
+    databases: [{ name: "MySQL" }, { name: "PostgreSQL" }],
     tools: [
       { name: "Git" },
       { name: "GitHub" },
@@ -69,9 +62,7 @@ export const profile = {
       { name: "Jenkins" },
       { name: "Postman" },
     ],
-    cloud: [
-      { name: "Microsoft Azure" },
-    ],
+    cloud: [{ name: "Microsoft Azure" }],
     ai: [
       { name: "Artificial Intelligence" },
       { name: "Machine Learning" },
@@ -84,10 +75,16 @@ export const profile = {
     {
       role: "Associate Engineer Trainee",
       company: "Nagarro",
-      period: "202X — Present",
+      period: "April,2026 — Present",
       description:
         "Working across software development and structured technical training, building applications with Java and Spring Boot, using Git for version control, and following established development practices as part of a collaborative engineering team focused on problem solving and code quality.",
-      tags: ["Java", "Spring Boot", "Git", "Team Collaboration", "Problem Solving"],
+      tags: [
+        "Java",
+        "Spring Boot",
+        "Git",
+        "Team Collaboration",
+        "Problem Solving",
+      ],
     },
   ],
 
@@ -95,9 +92,9 @@ export const profile = {
     {
       degree: "Bachelor of Technology — Computer Science Engineering",
       specialization: "Artificial Intelligence & Machine Learning",
-      institution: "YOUR_UNIVERSITY",
-      period: "202X — 202X",
-      score: "CGPA: 8.98",
+      institution: "DIT University, Dehradun",
+      period: "2022 — 2026",
+      score: "CGPA: 8.86",
     },
   ],
 
@@ -127,7 +124,7 @@ export const profile = {
         "Database persistence with MySQL",
         "Dockerized deployment behind Nginx",
       ],
-      githubUrl: "YOUR_GITHUB_URL",
+      githubUrl: "https://github.com/Akshita0309/FoodOrdering",
       liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: true,
     },
@@ -135,7 +132,13 @@ export const profile = {
       name: "AI Chatbot",
       description:
         "A conversational assistant with a React frontend and a Spring Boot backend that streams responses from an AI/LLM API in real time.",
-      technologies: ["React", "Spring Boot", "AI/LLM API", "JWT", "SSE Streaming"],
+      technologies: [
+        "React",
+        "Spring Boot",
+        "AI/LLM API",
+        "JWT",
+        "SSE Streaming",
+      ],
       features: [
         "Real-time streaming responses via Server-Sent Events",
         "JWT-secured chat sessions",
@@ -157,7 +160,8 @@ export const profile = {
         "Configurable budget alerts",
         "CSV/PDF export of records",
       ],
-      githubUrl: "YOUR_GITHUB_URL",
+      githubUrl:
+        "https://github.com/Akshita0309/ExpenseTracker/tree/main/expense-tracker",
       liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: false,
     },
@@ -193,41 +197,37 @@ export const profile = {
 
   certifications: [
     {
-      name: "Salesforce Agentblazer Champion",
-      issuer: "Salesforce Trailhead",
-      date: "YOUR_COMPLETION_DATE",
-      credentialId: "YOUR_CREDENTIAL_ID",
-      certificateUrl: "YOUR_CERTIFICATE_URL",
-      verifyUrl: "YOUR_VERIFICATION_URL",
-      description:
-        "Recognized for completing multiple Salesforce learning modules across the Agentblazer track.",
+      name: "Salesforce Developer with Agentblazer Champion",
+      issuer: "Skill Wallet- SmartBridge",
+      date: "August 8, 2025",
+      credentialId: "VIP-SDWAC-2025-3885",
+      certificateUrl:
+        "https://www.linkedin.com/in/akshita-nagdali-24601924b/overlay/Certifications/163656586/treasury/?profileId=ACoAAD3CvxYB4m919tIeU5Vmi_8h-ljWfIfiq5s",
     },
     {
-      name: "Apex Specialist",
-      issuer: "Salesforce Trailhead",
-      date: "YOUR_COMPLETION_DATE",
-      credentialId: "YOUR_CREDENTIAL_ID",
-      certificateUrl: "YOUR_CERTIFICATE_URL",
-      verifyUrl: "YOUR_VERIFICATION_URL",
+      name: "Tata - GenAI Powered Data Analytics Job Simulation",
+      issuer: "Forage",
+      date: "July 31, 2025",
+      credentialId: "W3B8Rb2Pti6XfemDL",
+      certificateUrl:
+        "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_5udMiPBHdLpzQk7Au_1753952974766_completion_certificate.pdf",
     },
     {
-      name: "Object Relationships Superbadge Unit",
-      issuer: "Salesforce Trailhead",
-      date: "YOUR_COMPLETION_DATE",
-      credentialId: "YOUR_CREDENTIAL_ID",
-      certificateUrl: "YOUR_CERTIFICATE_URL",
-      verifyUrl: "YOUR_VERIFICATION_URL",
+      name: "Software Engineering Job Simulation",
+      issuer: "Forage",
+      date: "Feb 17, 2026",
+      certificateUrl:
+        "https://www.linkedin.com/in/akshita-nagdali-24601924b/overlay/Certifications/1869632120/treasury/?profileId=ACoAAD3CvxYB4m919tIeU5Vmi_8h-ljWfIfiq5s",
     },
     {
-      name: "Lightning Web Component Basics",
-      issuer: "Salesforce Trailhead",
-      date: "YOUR_COMPLETION_DATE",
-      credentialId: "YOUR_CREDENTIAL_ID",
-      certificateUrl: "YOUR_CERTIFICATE_URL",
-      verifyUrl: "YOUR_VERIFICATION_URL",
+      name: "AI for Autonomous Vehicles and Robotics",
+      issuer: "Coursera",
+      date: "April, 2025",
+      certificateUrl:
+        "https://www.linkedin.com/in/akshita-nagdali-24601924b/overlay/Certifications/15571276/treasury/?profileId=ACoAAD3CvxYB4m919tIeU5Vmi_8h-ljWfIfiq5s",
     },
     {
-      name: "Salesforce Fundamentals",
+      name: "Introductino to Relational Databases",
       issuer: "Salesforce Trailhead",
       date: "YOUR_COMPLETION_DATE",
       credentialId: "YOUR_CREDENTIAL_ID",
@@ -274,16 +274,16 @@ export const profile = {
     {
       platform: "LinkedIn",
       description: "Professional networking and career profile.",
-      username: "YOUR_LINKEDIN_USERNAME",
-      url: "https://linkedin.com/in/YOUR_LINKEDIN_USERNAME",
+      username: "Akshita Nagdali",
+      url: "https://www.linkedin.com/in/akshita-nagdali-24601924b/",
       buttonLabel: "View LinkedIn",
       achievement: null,
     },
     {
       platform: "GitHub",
       description: "Source code, projects and repositories.",
-      username: "YOUR_GITHUB_USERNAME",
-      url: "https://github.com/YOUR_GITHUB_USERNAME",
+      username: "Akshita0309",
+      url: "https://github.com/Akshita0309",
       buttonLabel: "View GitHub",
       achievement: null,
     },
@@ -312,7 +312,8 @@ export const profile = {
   repositories: [
     {
       name: "justeat-food-delivery",
-      description: "Full-stack food delivery platform with role-based ordering.",
+      description:
+        "Full-stack food delivery platform with role-based ordering.",
       technologies: ["React", "Spring Boot", "MySQL"],
       stars: 0,
       url: "YOUR_GITHUB_URL",

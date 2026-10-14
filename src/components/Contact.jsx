@@ -21,7 +21,7 @@ export default function Contact() {
     const next = {};
     if (!form.name.trim()) next.name = "Enter your name.";
     if (!form.email.trim()) {
-      next.email = "Enter your email.";
+      next.email = "Enter your email address.";
     } else if (!EMAIL_RE.test(form.email.trim())) {
       next.email = "Enter a valid email address.";
     }
@@ -35,10 +35,13 @@ export default function Contact() {
     e.preventDefault();
     if (!validate()) return;
 
-    // NOTE: no backend email service is wired up yet. This form validates
-    // input and shows a success state locally. To actually deliver messages,
-    // connect a service such as Formspree, EmailJS, or your own API route
-    // here and replace this block with the real request.
+    const subject = encodeURIComponent(form.subject.trim());
+    const body = encodeURIComponent(
+      `Name: ${form.name.trim()}\nEmail: ${form.email.trim()}\n\n${form.message.trim()}`,
+    );
+    const mailtoLink = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
     setSubmitted(true);
     setForm(initialForm);
   };
@@ -114,15 +117,23 @@ export default function Contact() {
             <div
               role="status"
               className="rounded-lg border p-6 flex items-start gap-3"
-              style={{ borderColor: "var(--border)", backgroundColor: "var(--bg-raised)" }}
+              style={{
+                borderColor: "var(--border)",
+                backgroundColor: "var(--bg-raised)",
+              }}
             >
               <CheckCircle2 size={20} style={{ color: "var(--accent)" }} />
               <div>
                 <p className="font-medium">Message ready to send.</p>
-                <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-                  This form isn't wired up to an email service yet, so
-                  nothing was sent — connect one in{" "}
-                  <code style={{ fontFamily: "var(--font-mono)" }}>Contact.jsx</code>{" "}
+                <p
+                  className="mt-1 text-sm"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  This form isn't wired up to an email service yet, so nothing
+                  was sent — connect one in{" "}
+                  <code style={{ fontFamily: "var(--font-mono)" }}>
+                    Contact.jsx
+                  </code>{" "}
                   to make it live.
                 </p>
                 <button
@@ -162,7 +173,11 @@ export default function Contact() {
                 error={errors.subject}
               />
               <div>
-                <label htmlFor="message" className="block text-sm mb-1.5" style={{ color: "var(--text)" }}>
+                <label
+                  htmlFor="message"
+                  className="block text-sm mb-1.5"
+                  style={{ color: "var(--text)" }}
+                >
                   Message
                 </label>
                 <textarea
@@ -171,7 +186,9 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange("message")}
                   aria-invalid={Boolean(errors.message)}
-                  aria-describedby={errors.message ? "message-error" : undefined}
+                  aria-describedby={
+                    errors.message ? "message-error" : undefined
+                  }
                   className="w-full rounded-md border px-3.5 py-2.5 text-sm outline-none"
                   style={{
                     borderColor: errors.message ? "#c94a3f" : "var(--border)",
@@ -180,7 +197,11 @@ export default function Contact() {
                   }}
                 />
                 {errors.message ? (
-                  <p id="message-error" className="mt-1 text-xs" style={{ color: "#c94a3f" }}>
+                  <p
+                    id="message-error"
+                    className="mt-1 text-xs"
+                    style={{ color: "#c94a3f" }}
+                  >
                     {errors.message}
                   </p>
                 ) : null}
@@ -189,7 +210,10 @@ export default function Contact() {
               <button
                 type="submit"
                 className="inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium transition-transform duration-150 hover:-translate-y-0.5"
-                style={{ backgroundColor: "var(--accent)", color: "var(--bg-sunken)" }}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  color: "var(--bg-sunken)",
+                }}
               >
                 Send message <Send size={15} />
               </button>
@@ -204,7 +228,11 @@ export default function Contact() {
 function Field({ label, id, type = "text", value, onChange, error }) {
   return (
     <div>
-      <label htmlFor={id} className="block text-sm mb-1.5" style={{ color: "var(--text)" }}>
+      <label
+        htmlFor={id}
+        className="block text-sm mb-1.5"
+        style={{ color: "var(--text)" }}
+      >
         {label}
       </label>
       <input
@@ -222,7 +250,11 @@ function Field({ label, id, type = "text", value, onChange, error }) {
         }}
       />
       {error ? (
-        <p id={`${id}-error`} className="mt-1 text-xs" style={{ color: "#c94a3f" }}>
+        <p
+          id={`${id}-error`}
+          className="mt-1 text-xs"
+          style={{ color: "#c94a3f" }}
+        >
           {error}
         </p>
       ) : null}
