@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import { ArrowLeft, Github } from "lucide-react";
 import { profile } from "../data/profile";
 import { slugify } from "../utils/slug";
 
@@ -63,17 +63,6 @@ export default function ProjectDetail() {
             style={{ borderColor: "var(--border)" }}
           >
             <Github size={15} /> View code
-          </a>
-        ) : null}
-        {!isPlaceholder(project.liveUrl) ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium"
-            style={{ backgroundColor: "var(--accent)", color: "var(--bg-sunken)" }}
-          >
-            <ExternalLink size={15} /> Live demo
           </a>
         ) : null}
       </div>

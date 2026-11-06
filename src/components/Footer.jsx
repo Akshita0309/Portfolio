@@ -39,7 +39,13 @@ export default function Footer() {
           >
             <Github size={17} />
           </a>
-          <a href={`mailto:${profile.email}`} aria-label="Email" style={{ color: "var(--text-muted)" }}>
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.email)}`}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Email"
+            style={{ color: "var(--text-muted)" }}
+          >
             <Mail size={17} />
           </a>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
+import { Github, ArrowUpRight } from "lucide-react";
 import { slugify } from "../utils/slug";
 
 const isPlaceholder = (url) => !url || url.startsWith("YOUR_");
@@ -70,26 +70,6 @@ export default function ProjectCard({ project, featured = false }) {
             title="Add your GitHub URL in src/data/profile.js"
           >
             <Github size={15} /> Code
-          </span>
-        )}
-
-        {!isPlaceholder(project.liveUrl) ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm"
-            style={{ color: "var(--text)" }}
-          >
-            <ExternalLink size={15} /> Live demo
-          </a>
-        ) : (
-          <span
-            className="inline-flex items-center gap-1.5 text-sm cursor-not-allowed"
-            style={{ color: "var(--text-muted)" }}
-            title="Add your live demo URL in src/data/profile.js"
-          >
-            <ExternalLink size={15} /> Live demo
           </span>
         )}
 

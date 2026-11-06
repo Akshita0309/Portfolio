@@ -75,15 +75,6 @@ Requires Node.js 18+ and npm.
 npm install
 ```
 
-## Running locally
-
-```bash
-npm run dev
-```
-
-This starts a local dev server (Vite will print the URL, typically
-`http://localhost:5173`) with hot module reloading.
-
 ## Building for production
 
 ```bash
@@ -157,14 +148,13 @@ Add an object to the `projects` array in `profile.js`:
   technologies: ["React", "Node.js"],
   features: ["Feature one", "Feature two"],
   githubUrl: "https://github.com/you/your-repo", // or leave as "YOUR_GITHUB_URL"
-  liveUrl: "https://your-demo-url.com",           // or leave as "YOUR_LIVE_DEMO_URL"
   featured: false,
 }
 ```
 
 Each project automatically gets a card on the Projects section and its own
-detail page at `/projects/<slugified-name>`. Leaving a URL as a
-`YOUR_..._URL` placeholder disables that button instead of linking nowhere.
+detail page at `/projects/<slugified-name>`. Leaving `githubUrl` as a
+`YOUR_GITHUB_URL` placeholder disables the Code button instead of linking nowhere.
 
 ### Adding a certification
 

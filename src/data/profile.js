@@ -125,7 +125,6 @@ export const profile = {
         "Dockerized deployment behind Nginx",
       ],
       githubUrl: "https://github.com/Akshita0309/FoodOrdering",
-      liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: true,
     },
     {
@@ -146,7 +145,6 @@ export const profile = {
         "React chat interface with message history",
       ],
       githubUrl: "YOUR_GITHUB_URL",
-      liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: false,
     },
     {
@@ -162,7 +160,6 @@ export const profile = {
       ],
       githubUrl:
         "https://github.com/Akshita0309/ExpenseTracker/tree/main/expense-tracker",
-      liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: false,
     },
     {
@@ -176,7 +173,6 @@ export const profile = {
         "Audit logging for record changes",
       ],
       githubUrl: "YOUR_GITHUB_URL",
-      liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: false,
     },
     {
@@ -190,7 +186,6 @@ export const profile = {
         "Billing calculation by duration and slot type",
       ],
       githubUrl: "YOUR_GITHUB_URL",
-      liveUrl: "YOUR_LIVE_DEMO_URL",
       featured: false,
     },
   ],
